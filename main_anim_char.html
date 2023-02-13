@@ -1,0 +1,61 @@
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>퀴즈 사이트</title>
+        <link rel="stylesheet" type="text/css" href="./my_style.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <div id="main_logo">
+                    <a><h2 id="logo_txt">퀴즈 사이트</h2></a>
+                </div>
+                <div id="navi_site">
+                    <div id="navi_bar">
+                        <ul>
+                            <li><a href="./index.html">홈</a></li>
+                            <li><a>일본어</a>
+                                <ul>
+                                    <li><a href="./main_jp_voca.html">어휘</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                            <li><a>애니메이션</a>
+                                <ul>
+                                    <li><a href="./main_anim_char.html">[종합] 캐릭터</a></li>
+                                    <li><a href="#">[종합] 음악(OP, ED, etc.)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a class="txt_size_70">현재 카테고리: 애니메이션 > [종합] 캐릭터</a>
+                </div>
+            </div>
+            <div id="container">
+                <div id="prob_site">
+                    <div>
+                        <span class="txt_size_130" id="prob_no"></span>
+                        <span id="hint_txt" class="blind">(출연작품명)</span>
+                        <span class="txt_style_bold txt_size_130" id="prob_txt">문제가 나올 부분입니다. 시작 버튼을 누르면 퀴즈가 시작됩니다.</span>
+                    </div>
+                    <div>
+                        <img id="prob_img" src="">
+                    </div>
+                </div>
+                <div id="ans_site">
+                    <input id="ans_blank" type="text" onkeyup="fnEnterkey(event)">
+                    <a id="site_start_btn"><input id="btn_start" type="button" value="시작" onclick="fnLClickStartBtn()"></a>
+                    <a id="site_re_btn"><input id="btn_re" type="button" value="다시" onclick="window.location.reload()"></a>
+                </div>
+                <div>
+                    <label><input id="hint_check" type="checkbox" name="show_hint" value="yes" onclick="fnClickHintCheckBox()">출연작품명 표시</label>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js_anim_char.js"></script>
+        <script src="./useful_fn.js"></script>
+    </body>
+</html>
